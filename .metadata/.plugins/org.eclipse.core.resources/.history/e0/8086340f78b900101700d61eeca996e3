@@ -1,0 +1,18 @@
+
+public class A2b2c3d2 {
+	public static void main(String[] args) {
+		String input="aabbcccdd";
+		System.out.println("output: "+getCountOfLetters(input));
+		
+	}
+	public static String getCountOfLetters(String input) {
+		StringBuilder sb=new StringBuilder();
+		int count=1;
+		for(int i=0;i<input.length()-1;i++) {
+			if(input.charAt(i)==input.charAt(i+1)) {
+				count++;
+			}else {sb.append(input.charAt(i)).append(count);}
+			count=1;
+		}return sb.toString();
+	}
+}

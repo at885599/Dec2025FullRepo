@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-10T17:50:51 IST" name="Default suite" finished-at="2025-11-10T17:51:34 IST" duration-ms="42672">
+    <groups>
+    </groups>
+    <test started-at="2025-11-10T17:50:51 IST" name="Default test" finished-at="2025-11-10T17:51:34 IST" duration-ms="42672">
+      <class name="MainAmazonAuto">
+        <test-method is-config="true" signature="setup()[pri:0, instance:MainAmazonAuto@548e6d58]" started-at="2025-11-10T17:50:51 IST" name="setup" finished-at="2025-11-10T17:50:53 IST" duration-ms="1930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Amazon()[pri:0, instance:MainAmazonAuto@548e6d58]" started-at="2025-11-10T17:50:53 IST" name="Amazon" finished-at="2025-11-10T17:51:33 IST" duration-ms="40319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Amazon -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:MainAmazonAuto@548e6d58]" started-at="2025-11-10T17:51:33 IST" name="teardown" finished-at="2025-11-10T17:51:34 IST" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- MainAmazonAuto -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

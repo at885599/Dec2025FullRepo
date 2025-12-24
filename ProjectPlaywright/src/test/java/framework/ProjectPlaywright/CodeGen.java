@@ -1,0 +1,27 @@
+package framework.ProjectPlaywright;
+
+import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserContext;
+import com.microsoft.playwright.BrowserType;
+import com.microsoft.playwright.FrameLocator;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.Playwright;
+import com.microsoft.playwright.options.AriaRole;
+
+public class CodeGen {
+  public static void main(String[] args) throws InterruptedException {
+    try (Playwright playwright = Playwright.create()) {
+      Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
+        .setHeadless(false));
+      BrowserContext context = browser.newContext();
+      Page page = context.newPage();
+      page.navigate("https://cristurple.blogspot.com/2015/08/digital-literacy-is-crucial-for-reading.html?m=1");
+      page.locator("iframe[name=\"comment-editor\"]").contentFrame().getByRole(AriaRole.TEXTBOX, new FrameLocator.GetByRoleOptions().setName("Enter Comment")).click();
+      page.locator("iframe[name=\"comment-editor\"]").contentFrame().getByRole(AriaRole.TEXTBOX, new FrameLocator.GetByRoleOptions().setName("Enter Comment")).click();
+      page.locator("iframe[name=\"comment-editor\"]").contentFrame().getByRole(AriaRole.TEXTBOX, new FrameLocator.GetByRoleOptions().setName("Enter Comment")).fill("TestComment1");
+      page.locator("iframe[name=\"comment-editor\"]").contentFrame().getByRole(AriaRole.BUTTON, new FrameLocator.GetByRoleOptions().setName("Publish")).click();
+      Thread.sleep(10000);
+      playwright.close();
+    }
+  }
+}

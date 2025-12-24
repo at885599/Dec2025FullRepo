@@ -1,0 +1,16 @@
+
+public class IsPalindrome {
+	public static void main(String[] args) {
+		String str="MAlaYalaM";
+		String strLow=str.toLowerCase();
+		StringBuilder sb=new StringBuilder(strLow);
+		StringBuilder sbReverse=sb.reverse();
+		if(strLow.equals(sbReverse.toString())) {
+			System.out.println("This is a palindrome");
+		}
+		else {System.out.println("Not a palindrome");
+		}
+		System.out.println(strLow);
+		System.out.println(sbReverse.toString());
+	}
+}

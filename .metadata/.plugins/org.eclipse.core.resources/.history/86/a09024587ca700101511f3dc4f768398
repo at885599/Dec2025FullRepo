@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+
+public class CountVowelsAndConsonants {
+	public static void main(String[] args) {
+		int arr[]= {11,49,76,58,47,8};
+		ArrayList<Integer> a=new ArrayList<Integer>(arr);
+		for(int i: a) {
+			System.out.println(i);
+		}
+	}
+}

@@ -1,0 +1,16 @@
+package requests;
+
+import org.junit.jupiter.api.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.specification.RequestSpecification;
+
+public class Bearer_token_Request {
+
+	public static void main(String[] args) {
+		@Test
+		RestAssured.baseURI="https://bookstore.toolsqa.com";
+		RequestSpecification request=RestAssured.given();
+	}
+
+}

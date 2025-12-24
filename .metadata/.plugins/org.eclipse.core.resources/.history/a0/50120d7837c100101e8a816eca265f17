@@ -1,0 +1,39 @@
+
+public class SecondSmallestLargest {
+
+	public static void main(String[] args) {
+		
+	}
+
+}
+
+/*Given an array, find the second smallest and second largest element in the array.
+ 
+Print ‘-1’ in the event that either of them doesn’t exist.
+ 
+Constraint 1: You are NOT allowed to sort the array in any way.
+ 
+Constraint 2: There may be duplicates in the array.
+ 
+Constraint 3: You can have an empty array(print -1 in that case) as well as an array with negative numbers
+ 
+Example 1:
+
+Input: [1,2,4,7,7,5]
+
+Output: Second Smallest : 2
+
+Second Largest : 5
+
+Explanation: The elements are as follows 1,2,4,5,7,7 and hence second largest of these is 5 and second smallest is 2.
+ 
+Example 2:
+
+Input: [2]
+
+Output: Second Smallest : -1
+
+Second Largest : -1
+
+Explanation: Since there is only one element in the array, it is the largest and smallest element present in the array. There is no second largest or second smallest element present.
+ */

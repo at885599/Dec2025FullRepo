@@ -19,7 +19,7 @@ pipeline {
                 // Move into the FirstProject folder
                 dir('FirstProject') {
                     // Run only amazonHomepage test class
-                    sh 'mvn test -Dtest=amazonHomepage'
+                    sh 'mvn test -Dtest=MainAmazonAuto'
                 }
             }
         }
